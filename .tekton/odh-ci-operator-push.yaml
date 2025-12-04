@@ -178,7 +178,7 @@ spec:
           value: https://github.com/red-hat-data-services/rhoai-konflux-tasks
         - name: revision
           value: "odh"
-        - name: path
+        - name: pathInRepo
           value: "konflux-tekton-tasks/prefetch-operand-manifests-oci-ta/0.1/prefetch-operand-manifests-oci-ta.yaml"
         resolver: git
       workspaces:
