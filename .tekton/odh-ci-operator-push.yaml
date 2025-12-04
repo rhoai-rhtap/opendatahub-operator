@@ -9,13 +9,13 @@ metadata:
     pipelinesascode.tekton.dev/cancel-in-progress: "false"
     pipelinesascode.tekton.dev/max-keep-runs: "3"
     pipelinesascode.tekton.dev/on-cel-expression: event == "push" && target_branch
-      == "main" && ".tekton/odh-ci-operator-push-push.yaml".pathChanged()
+      == "main" && ".tekton/odh-ci-operator-push.yaml".pathChanged()
   creationTimestamp: null
   labels:
     appstudio.openshift.io/application: poc
-    appstudio.openshift.io/component: odh-ci-operator-push
+    appstudio.openshift.io/component: odh-ci-operator
     pipelines.appstudio.openshift.io/type: build
-  name: odh-ci-operator-push-on-push
+  name: odh-ci-operator-on-push
   namespace: open-data-hub-tenant
 spec:
   params:
@@ -24,7 +24,7 @@ spec:
   - name: revision
     value: '{{revision}}'
   - name: output-image
-    value: quay.io/redhat-user-workloads/open-data-hub-tenant/odh-ci-operator-push:{{revision}}
+    value: quay.io/redhat-user-workloads/open-data-hub-tenant/odh-ci-operator:{{revision}}
   - name: dockerfile
     value: Dockerfiles/Dockerfile
   - name: skip-checks
@@ -652,7 +652,7 @@ spec:
     - name: netrc
       optional: true
   taskRunTemplate:
-    serviceAccountName: build-pipeline-odh-ci-operator-push
+    serviceAccountName: build-pipeline-odh-ci-operator
   workspaces:
   - name: git-auth
     secret:
