@@ -5,6 +5,7 @@ map:
     src: manifests
     dest: workbenches/notebooks
     ref_type: branch
+    branch: stable
   odh-kserve-controller:
     src: config
     dest: kserve
@@ -35,11 +36,11 @@ map:
     dest: trustyai
     git.url: https://github.com/opendatahub-io/trustyai-service-operator
     git.commit: d608d4c8e4dd819e2f102cb3dfa960be091f4679
-  odh-model-controller:
-    src: config
-    dest: modelcontroller
-    git.url: https://github.com/opendatahub-io/odh-model-controller
-    git.commit: a61860e2e18c7a4d8dc8bc18da4c1d54ad02a135
+#  odh-model-controller:
+#    src: config
+#    dest: modelcontroller
+#    git.url: https://github.com/opendatahub-io/odh-model-controller
+#    git.commit: a61860e2e18c7a4d8dc8bc18da4c1d54ad02a135
   odh-model-registry-operator:
     src: config
     dest: modelregistry
@@ -60,16 +61,16 @@ map:
     dest: feastoperator
     git.url: https://github.com/opendatahub-io/feast
     git.commit: 5f01dd17ecfb2c588fe0171120bb35faf2680674
-  odh-llama-stack-k8s-operator:
-    src: config
-    dest: llamastackoperator
-    git.url: https://github.com/opendatahub-io/llama-stack-k8s-operator
-    git.commit: 9297c8fcbdccdb7c671b943e5ebc1b78f65b13a3
-  odh-trainer:
-    src: manifests
-    dest: trainer
-    git.url: https://github.com/opendatahub-io/trainer
-    git.commit: 25a8511cd68575df59080a6c10fffd2ae157eea4
+#  odh-llama-stack-k8s-operator:
+#    src: config
+#    dest: llamastackoperator
+#    git.url: https://github.com/opendatahub-io/llama-stack-k8s-operator
+#    git.commit: 9297c8fcbdccdb7c671b943e5ebc1b78f65b13a3
+#  odh-trainer:
+#    src: manifests
+#    dest: trainer
+#    git.url: https://github.com/opendatahub-io/trainer
+#    git.commit: 25a8511cd68575df59080a6c10fffd2ae157eea4
 additional_meta:
   odh-trustyai-service:
     git.url: https://github.com/opendatahub-io/trustyai-explainability
