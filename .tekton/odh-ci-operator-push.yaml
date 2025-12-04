@@ -190,10 +190,10 @@ spec:
       description: debug
       runAfter:
       - prefetch-manifests
-      volumes:
-      - name: workdir
-        emptyDir: {}
       taskSpec:
+        volumes:
+        - name: workdir
+          emptyDir: {}
         stepTemplate:
           volumeMounts:
             - mountPath: /var/workdir
