@@ -214,8 +214,11 @@ spec:
             script: |
               echo "SOURCE_ARTIFACT=${SOURCE_ARTIFACT}"
               echo "CACHI2_ARTIFACT=${CACHI2_ARTIFACT}"
-              tree /var/workdir/prefetched-manifests
-              tree /var/workdir/source
+              echo "exploring manifests"
+              ls /var/workdir/prefetched-manifests
+              
+              echo "exploring sources"
+              ls /var/workdir/source
 
       workspaces:
       - name: basic-auth

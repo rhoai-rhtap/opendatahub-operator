@@ -1,3 +1,4 @@
+push.sh
 # pkg and bin directories currently contain build artifacts
 # only so we exclude them.
 bin/
