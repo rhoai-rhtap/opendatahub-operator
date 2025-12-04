@@ -170,6 +170,8 @@ spec:
         value: "1h"
       - name: utilsRepoBranch
         value: "odh"
+      - name: buildVersionTag
+        value: "odh-stable"
       runAfter:
       - clone-repository
       taskRef:
