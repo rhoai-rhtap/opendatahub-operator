@@ -17,8 +17,8 @@ RUN if [ "${MANIFESTS_MODE}" == "RELEASE" ]; then \
         rm -rf /opt/manifests/*; \
         ./get_all_manifests.sh ${OVERWRITE_MANIFESTS}; \
     elif [ "${MANIFESTS_MODE}" == "CI" ]; then \
-        ls -la ./prefetched-manifests; \
-        cp -r ./prefetched-manifests/* /opt/manifests/; \
+        ls -la ./cachi2; \
+        cp -r ./cachi2/* /opt/manifests/; \
     fi
 
 # Clean up unwanted directories and files from manifests
