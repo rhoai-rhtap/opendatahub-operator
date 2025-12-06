@@ -189,7 +189,7 @@ relatedImages:
       value: quay.io/opendatahub/odh-training-cuda124-torch25-py311@sha256:3c9ff3db0a29600bd8461ec47337c2133658c5b0cda62db5b870023e42efabd0
       component: odh-training-cuda124-torch25-py311
     - name: RELATED_IMAGE_ODH_TRAINING_CUDA128_TORCH28_PY312_IMAGE
-      value: quay.io/opendatahub/odh-training-cuda128-torch28-py312@sha256:53d01d089bd2407e40c342ef5600c6ea35fc54f524c03366e06e936a55c20292
+      value: quay.io/opendatahub/odh-training-cuda128-torch28-py312-rhel9@sha256:53d01d089bd2407e40c342ef5600c6ea35fc54f524c03366e06e936a55c20292
       component: odh-training-cuda128-torch28-py312
     - name: RELATED_IMAGE_ODH_TRAINING_ROCM62_TORCH24_PY311_IMAGE
       value: quay.io/opendatahub/odh-training-rocm62-torch24-py311@sha256:b7867f5f49e9c66143c30dfc27bcbbf51a65a548ff4ff210113856c2317fc627
