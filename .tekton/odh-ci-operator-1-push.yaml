@@ -110,12 +110,12 @@ spec:
 #    - description: ""
 #      name: IMAGE_DIGEST
 #      value: $(tasks.build-image-index.results.IMAGE_DIGEST)
-    - description: ""
-      name: CHAINS-GIT_URL
-      value: $(tasks.clone-repository.results.url)
-    - description: ""
-      name: CHAINS-GIT_COMMIT
-      value: $(tasks.clone-repository.results.commit)
+#    - description: ""
+#      name: CHAINS-GIT_URL
+#      value: $(tasks.clone-repository.results.url)
+#    - description: ""
+#      name: CHAINS-GIT_COMMIT
+#      value: $(tasks.clone-repository.results.commit)
     tasks:
     - name: init
       params:
