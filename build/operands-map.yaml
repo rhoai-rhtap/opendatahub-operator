@@ -183,22 +183,22 @@ relatedImages:
       value: quay.io/opendatahub/llama-stack-provider-ragas@sha256:627f4d4c2910869f4da07db7eaddd8cec89e862d71f90bdf14b61fbbb4935be0
       component: odh-trustyai-ragas-lls-provider-dsp
     - name: RELATED_IMAGE_ODH_TRAINING_CUDA121_TORCH24_PY311_IMAGE
-      value: quay.io/opendatahub/odh-training-cuda121-torch24-py311-rhel9@sha256:6124994d0146cec185d27af9f7cf2e06da319cb2e05bdf4ead0a71d254852c41
+      value: quay.io/opendatahub/odh-training-cuda121-torch24-py311@sha256:6124994d0146cec185d27af9f7cf2e06da319cb2e05bdf4ead0a71d254852c41
       component: odh-training-cuda121-torch24-py311
     - name: RELATED_IMAGE_ODH_TRAINING_CUDA124_TORCH25_PY311_IMAGE
-      value: quay.io/opendatahub/odh-training-cuda124-torch25-py311-rhel9@sha256:3c9ff3db0a29600bd8461ec47337c2133658c5b0cda62db5b870023e42efabd0
+      value: quay.io/opendatahub/odh-training-cuda124-torch25-py311@sha256:3c9ff3db0a29600bd8461ec47337c2133658c5b0cda62db5b870023e42efabd0
       component: odh-training-cuda124-torch25-py311
     - name: RELATED_IMAGE_ODH_TRAINING_CUDA128_TORCH28_PY312_IMAGE
-      value: quay.io/opendatahub/odh-training-cuda128-torch28-py312-rhel9@sha256:53d01d089bd2407e40c342ef5600c6ea35fc54f524c03366e06e936a55c20292
+      value: quay.io/opendatahub/odh-training-cuda128-torch28-py312@sha256:53d01d089bd2407e40c342ef5600c6ea35fc54f524c03366e06e936a55c20292
       component: odh-training-cuda128-torch28-py312
     - name: RELATED_IMAGE_ODH_TRAINING_ROCM62_TORCH24_PY311_IMAGE
-      value: quay.io/opendatahub/odh-training-rocm62-torch24-py311-rhel9@sha256:b7867f5f49e9c66143c30dfc27bcbbf51a65a548ff4ff210113856c2317fc627
+      value: quay.io/opendatahub/odh-training-rocm62-torch24-py311@sha256:b7867f5f49e9c66143c30dfc27bcbbf51a65a548ff4ff210113856c2317fc627
       component: odh-training-rocm62-torch24-py311
     - name: RELATED_IMAGE_ODH_TRAINING_ROCM62_TORCH25_PY311_IMAGE
-      value: quay.io/opendatahub/odh-training-rocm62-torch25-py311-rhel9@sha256:b4087d3b5f319c61670e4875255a77d3c186d85c40deb07b0f22797d433e20f6
+      value: quay.io/opendatahub/odh-training-rocm62-torch25-py311@sha256:b4087d3b5f319c61670e4875255a77d3c186d85c40deb07b0f22797d433e20f6
       component: odh-training-rocm62-torch25-py311
     - name: RELATED_IMAGE_ODH_TRAINING_ROCM64_TORCH28_PY312_IMAGE
-      value: quay.io/opendatahub/odh-training-rocm64-torch28-py312-rhel9@sha256:728727e35c2f67cd6d11d998cf3f8bb363d4cab2ca8be6addd13a70c84a9234f
+      value: quay.io/opendatahub/odh-training-rocm64-torch28-py312@sha256:728727e35c2f67cd6d11d998cf3f8bb363d4cab2ca8be6addd13a70c84a9234f
       component: odh-training-rocm64-torch28-py312
     - name: RELATED_IMAGE_ODH_MOD_ARCH_MODEL_REGISTRY_IMAGE
       value: quay.io/opendatahub/odh-mod-arch-modular-architecture@sha256:943fdbe618b61651883090f09d1735e02f28a317e474f75fe05dd1ff7d00d294
