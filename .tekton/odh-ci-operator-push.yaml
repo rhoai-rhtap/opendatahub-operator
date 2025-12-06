@@ -207,7 +207,7 @@ spec:
             args:
               - use
               - $(tasks.prefetch-manifests.results.SOURCE_ARTIFACT)=/var/workdir/source
-              - $(tasks.prefetch-manifests.results.CACHI2_ARTIFACT)=/var/workdir/prefetched-manifests
+              - $(tasks.prefetch-manifests.results.CACHI2_ARTIFACT)=/var/workdir/cachi2
           - image: quay.io/rhoai/rhoai-task-toolset:latest
             env:
             - name: SOURCE_ARTIFACT
@@ -218,8 +218,9 @@ spec:
               echo "SOURCE_ARTIFACT=${SOURCE_ARTIFACT}"
               echo "CACHI2_ARTIFACT=${CACHI2_ARTIFACT}"
               echo "exploring manifests"
-              ls /var/workdir/prefetched-manifests
-
+              ls /var/workdir/cachi2
+              ls /var/workdir/cachi2/prefetched-manifests
+              
               echo "exploring sources"
               ls /var/workdir/source
 
