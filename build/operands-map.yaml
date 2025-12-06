@@ -197,18 +197,18 @@ relatedImages:
 #    - name: RELATED_IMAGE_ODH_TRAINING_ROCM62_TORCH25_PY311_IMAGE
 #      value: quay.io/opendatahub/odh-training-rocm62-torch25-py311@sha256:b4087d3b5f319c61670e4875255a77d3c186d85c40deb07b0f22797d433e20f6
 #      component: odh-training-rocm62-torch25-py311
-    - name: RELATED_IMAGE_ODH_TRAINING_ROCM64_TORCH28_PY312_IMAGE
-      value: quay.io/opendatahub/odh-training-rocm64-torch28-py312@sha256:728727e35c2f67cd6d11d998cf3f8bb363d4cab2ca8be6addd13a70c84a9234f
-      component: odh-training-rocm64-torch28-py312
+#    - name: RELATED_IMAGE_ODH_TRAINING_ROCM64_TORCH28_PY312_IMAGE
+#      value: quay.io/opendatahub/odh-training-rocm64-torch28-py312@sha256:728727e35c2f67cd6d11d998cf3f8bb363d4cab2ca8be6addd13a70c84a9234f
+#      component: odh-training-rocm64-torch28-py312
     - name: RELATED_IMAGE_ODH_MOD_ARCH_MODEL_REGISTRY_IMAGE
       value: quay.io/opendatahub/odh-mod-arch-modular-architecture@sha256:943fdbe618b61651883090f09d1735e02f28a317e474f75fe05dd1ff7d00d294
       component: odh-mod-arch-model-registry
     - name: RELATED_IMAGE_OSE_KUBE_RBAC_PROXY_IMAGE
       value: quay.io/opendatahub/odh-kube-auth-proxy@sha256:a528c85ba07a473250d72119de75b65b5d1cc6f0ce5d61abcfe89b3bb20d2839
       component: odh-kube-auth-proxy
-    - name: RELATED_IMAGE_ODH_TRAINER_IMAGE
-      value: quay.io/opendatahub/trainer@sha256:e83875f1d341b6fec5ffc6c30b6e957ce4b9239ab7c06c97c57ee0c1d410e390
-      component: odh-trainer
+#    - name: RELATED_IMAGE_ODH_TRAINER_IMAGE
+#      value: quay.io/opendatahub/trainer@sha256:e83875f1d341b6fec5ffc6c30b6e957ce4b9239ab7c06c97c57ee0c1d410e390
+#      component: odh-trainer
     - name: RELATED_IMAGE_ODH_OPERATOR_IMAGE
       value: quay.io/opendatahub/opendatahub-operator@sha256:e412c9152fcc21cea2e8d7d147c063de8bdc7b7c087ecdc712e87d29bc3e5e8f
       component: odh-operator
