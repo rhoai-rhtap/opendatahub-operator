@@ -103,6 +103,10 @@ spec:
         VMs
       name: privileged-nested
       type: string
+    - default: "opendatahub-io/odh-build-metadata"
+      description: Build metadata repo
+      name: build-metadata-repo
+      type: string
     results:
     - description: ""
       name: IMAGE_URL
@@ -655,6 +659,76 @@ spec:
         operator: in
         values:
         - "false"
+    finally:
+    - name: push-build-metadata
+      description: push-build-metadata
+      params:
+      - name: build-metadata-repo
+        value: "$(params.build-metadata-repo)"
+      taskSpec:
+        params:
+        - name: build-metadata-repo
+        volumes:
+        - name: workdir
+          emptyDir: {}
+        stepTemplate:
+          volumeMounts:
+            - mountPath: /var/workdir
+              name: workdir
+        steps:
+          - name: use-trusted-artifact
+            image: quay.io/redhat-appstudio/build-trusted-artifacts:latest@sha256:81c4864dae6bb11595f657be887e205262e70086a05ed16ada827fd6391926ac
+            args:
+              - use
+              - $(tasks.prefetch-manifests.results.SOURCE_ARTIFACT)=/var/workdir/source
+              - $(tasks.prefetch-manifests.results.CACHI2_ARTIFACT)=/var/workdir/cachi2
+          - image: quay.io/rhoai/rhoai-task-toolset:latest
+            env:
+            - name: SOURCE_ARTIFACT
+              value: $(tasks.prefetch-manifests.results.SOURCE_ARTIFACT)
+            - name: CACHI2_ARTIFACT
+              value: $(tasks.prefetch-manifests.results.CACHI2_ARTIFACT)
+            - name: OUTPUT_IMAGE_DIGEST
+              value: $(tasks.build-image-index.results.IMAGE_DIGEST)
+            - name: BUILD_METADATA_REPO
+              value: "$(params.build-metadata-repo)"
+            script: |
+              echo "SOURCE_ARTIFACT=${SOURCE_ARTIFACT}"
+              echo "CACHI2_ARTIFACT=${CACHI2_ARTIFACT}"
+              echo "exploring manifests"
+              ls /var/workdir/cachi2
+              ls /var/workdir/cachi2/prefetched-manifests
+              
+              echo "exploring sources"
+              ls /var/workdir/source
+              
+              echo "****************** pushing the changes to odh-build-metadata ************************"
+              META_DIR=/var/workdir/odh-build-metadata
+              mkdir -p ${META_DIR}
+              cd ${META_DIR}
+              git config --global init.defaultBranch main
+              git init
+              git remote add origin "https://github.com/${BUILD_METADATA_REPO}.git"
+              git config core.sparseCheckout true
+              git config core.sparseCheckoutCone false
+              echo "components/odh-operator/docs" >> .git/info/sparse-checkout
+              git fetch --depth=1 origin master
+              git checkout main
+              
+              // add content to new-dir              
+              mkdir -p ${OUTPUT_IMAGE_DIGEST}/manifests
+              cp -r /var/workdir/cachi2/prefetched-manifests ${OUTPUT_IMAGE_DIGEST}/manifests
+              cp /var/workdir/source/build/operands-map.yaml ${OUTPUT_IMAGE_DIGEST}
+              cp /var/workdir/source/build/manifests-config.yaml ${OUTPUT_IMAGE_DIGEST}
+
+              git add --sparse ${OUTPUT_IMAGE_DIGEST}
+              git commit -m "build-meta for operator image ${OUTPUT_IMAGE_DIGEST}"
+              git push
+              
+
+      workspaces:
+      - name: basic-auth
+        workspace: git-auth
     workspaces:
     - name: git-auth
       optional: true
