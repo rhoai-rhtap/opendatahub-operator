@@ -232,33 +232,6 @@ spec:
       - name: basic-auth
         workspace: git-auth
 
-
-#    - name: prefetch-dependencies
-#      params:
-#      - name: input
-#        value: $(params.prefetch-input)
-#      - name: SOURCE_ARTIFACT
-#        value: $(tasks.clone-repository.results.SOURCE_ARTIFACT)
-#      - name: ociStorage
-#        value: $(params.output-image).prefetch
-#      - name: ociArtifactExpiresAfter
-#        value: $(params.image-expires-after)
-#      runAfter:
-#      - clone-repository
-#      taskRef:
-#        params:
-#        - name: name
-#          value: prefetch-dependencies-oci-ta
-#        - name: bundle
-#          value: quay.io/konflux-ci/tekton-catalog/task-prefetch-dependencies-oci-ta:0.2@sha256:3fa0204a481044b21f0e784ce39cbd25e8fb49c664a5458f3eef351fff1c906e
-#        - name: kind
-#          value: task
-#        resolver: bundles
-#      workspaces:
-#      - name: git-basic-auth
-#        workspace: git-auth
-#      - name: netrc
-#        workspace: netrc
     - name: build-container
       params:
       - name: IMAGE
@@ -692,6 +665,11 @@ spec:
               value: $(tasks.build-image-index.results.IMAGE_DIGEST)
             - name: BUILD_METADATA_REPO
               value: "$(params.build-metadata-repo)"
+            - name: GITHUB_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  name: odh-github-secret
+                  key: build-metadata-token
             script: |
               echo "SOURCE_ARTIFACT=${SOURCE_ARTIFACT}"
               echo "CACHI2_ARTIFACT=${CACHI2_ARTIFACT}"
@@ -708,7 +686,7 @@ spec:
               cd ${META_DIR}
               git config --global init.defaultBranch main
               git init
-              git remote add origin "https://github.com/${BUILD_METADATA_REPO}.git"
+              git remote add origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${BUILD_METADATA_REPO}.git"
               git config core.sparseCheckout true
               git config core.sparseCheckoutCone false
               echo "components/odh-operator/docs" >> .git/info/sparse-checkout
