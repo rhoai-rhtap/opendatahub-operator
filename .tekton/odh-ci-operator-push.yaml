@@ -696,12 +696,12 @@ spec:
               git checkout main
               
               #add content to new-dir              
-              mkdir -p ${OUTPUT_IMAGE_DIGEST}/manifests
-              cp -r /var/workdir/cachi2/prefetched-manifests ${OUTPUT_IMAGE_DIGEST}/manifests
-              cp /var/workdir/source/build/operands-map.yaml ${OUTPUT_IMAGE_DIGEST}
-              cp /var/workdir/source/build/manifests-config.yaml ${OUTPUT_IMAGE_DIGEST}
+              mkdir -p components/odh-operator/${OUTPUT_IMAGE_DIGEST}/manifests
+              cp -r /var/workdir/cachi2/prefetched-manifests/* components/odh-operator/${OUTPUT_IMAGE_DIGEST}/manifests
+              cp /var/workdir/source/build/operands-map.yaml components/odh-operator/${OUTPUT_IMAGE_DIGEST}
+              cp /var/workdir/source/build/manifests-config.yaml components/odh-operator/${OUTPUT_IMAGE_DIGEST}
 
-              git add --sparse ${OUTPUT_IMAGE_DIGEST}
+              git add --sparse components/odh-operator/${OUTPUT_IMAGE_DIGEST}
               git commit -m "build-meta for operator image ${OUTPUT_IMAGE_DIGEST}"
               git push
               
