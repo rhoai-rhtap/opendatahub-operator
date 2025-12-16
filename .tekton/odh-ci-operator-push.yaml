@@ -693,7 +693,7 @@ spec:
               git fetch --depth=1 origin main
               git checkout main
               
-              // add content to new-dir              
+              #add content to new-dir              
               mkdir -p ${OUTPUT_IMAGE_DIGEST}/manifests
               cp -r /var/workdir/cachi2/prefetched-manifests ${OUTPUT_IMAGE_DIGEST}/manifests
               cp /var/workdir/source/build/operands-map.yaml ${OUTPUT_IMAGE_DIGEST}
