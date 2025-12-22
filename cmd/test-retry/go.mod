@@ -4,7 +4,7 @@ go 1.24.0
 
 require (
 	github.com/google/go-github/v67 v67.0.0
-	github.com/spf13/cobra v1.8.1
+	github.com/spf13/cobra v1.10.2
 	github.com/spf13/viper v1.21.0
 	github.com/stretchr/testify v1.11.1
 	golang.org/x/oauth2 v0.31.0
