@@ -695,7 +695,8 @@ spec:
               git fetch --depth=1 origin main
               git checkout main
               
-              #add content to new-dir              
+              #add content to new-dir    
+              OUTPUT_IMAGE_DIGEST=${OUTPUT_IMAGE_DIGEST/sha256:/}
               mkdir -p components/odh-operator/${OUTPUT_IMAGE_DIGEST}/manifests
               cp -r /var/workdir/cachi2/prefetched-manifests/* components/odh-operator/${OUTPUT_IMAGE_DIGEST}/manifests
               cp /var/workdir/source/build/operands-map.yaml components/odh-operator/${OUTPUT_IMAGE_DIGEST}
