@@ -7,6 +7,7 @@ ARG TARGETPLATFORM
 ################################################################################
 FROM --platform=$BUILDPLATFORM registry.access.redhat.com/ubi9/toolbox as manifests
 ARG USE_LOCAL=false
+# MANIFESTS_MODE= CI | RELEASE | LOCAL
 ARG MANIFESTS_MODE=CI
 ARG OVERWRITE_MANIFESTS=""
 USER root
