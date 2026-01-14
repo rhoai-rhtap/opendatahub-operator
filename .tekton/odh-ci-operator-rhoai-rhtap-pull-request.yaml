@@ -177,10 +177,6 @@ spec:
         value: "odh"
       - name: buildVersionTag
         value: "odh-stable"
-#      - name: componentName
-#        valueFrom:
-#          fieldRef:
-#            fieldPath: metadata.labels['appstudio.openshift.io/component']
       runAfter:
       - clone-repository
       taskRef:
