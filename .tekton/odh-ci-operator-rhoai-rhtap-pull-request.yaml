@@ -31,7 +31,7 @@ spec:
   - name: skip-checks
     value: "true"
   - name: pr-number
-    value: "{{body.pull_request}}"
+    value: "{{body}}"
   pipelineSpec:
     description: |
       This pipeline is ideal for building container images from a Containerfile while maintaining trust after pipeline customization.
