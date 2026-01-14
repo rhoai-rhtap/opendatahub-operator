@@ -9,6 +9,7 @@ metadata:
     pipelinesascode.tekton.dev/cancel-in-progress: "false"
     pipelinesascode.tekton.dev/max-keep-runs: "3"
     pipelinesascode.tekton.dev/on-comment: "^/build odh-ci-operator"
+    build.appstudio.redhat.com/pr_number: "{{body}}"
     pipelinesascode.tekton.dev/on-cel-expression: event == "pull-request" && target_branch
       == "main"
   creationTimestamp: null
