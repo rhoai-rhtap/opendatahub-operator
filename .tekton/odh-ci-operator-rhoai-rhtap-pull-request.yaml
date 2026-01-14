@@ -8,7 +8,7 @@ metadata:
     build.appstudio.redhat.com/target_branch: '{{target_branch}}'
     pipelinesascode.tekton.dev/cancel-in-progress: "false"
     pipelinesascode.tekton.dev/max-keep-runs: "3"
-    pipelinesascode.tekton.dev/on-comment: "^/build odh-ci-operator"
+#    pipelinesascode.tekton.dev/on-comment: "^/build odh-ci-operator"
     build.appstudio.redhat.com/pr_number: '{{body.pull_request.number}}'
     pipelinesascode.tekton.dev/on-cel-expression: event == "pull-request" && target_branch
       == "main"
