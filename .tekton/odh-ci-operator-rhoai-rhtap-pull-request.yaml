@@ -710,8 +710,7 @@ spec:
       when:
       - input: "$(tasks.build-image-index.status)"
         operator: in
-        values:
-        - ["Succeeded"]
+        values: ["Succeeded"]
       workspaces:
       - name: basic-auth
         workspace: git-auth
