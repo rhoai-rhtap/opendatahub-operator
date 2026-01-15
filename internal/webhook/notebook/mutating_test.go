@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"testing"
 
-	"gomodules.xyz/jsonpatch/v2"
+	"gomodules.xyz/jsonpatch/v3"
 	admissionv1 "k8s.io/api/admission/v1"
 	authorizationv1 "k8s.io/api/authorization/v1"
 	corev1 "k8s.io/api/core/v1"
