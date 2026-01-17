@@ -3,7 +3,7 @@ module github.com/opendatahub-io/opendatahub-operator/v2/cmd/test-retry
 go 1.24.0
 
 require (
-	github.com/google/go-github/v67 v67.0.0
+	github.com/google/go-github/v81 v81.0.0
 	github.com/spf13/cobra v1.8.1
 	github.com/spf13/viper v1.21.0
 	github.com/stretchr/testify v1.11.1
