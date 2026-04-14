@@ -5,6 +5,9 @@ map:
     git.url: https://github.com/opendatahub-io/notebooks
     ref_type: branch
     branch: stable
+  odh-ai-first-demo:
+    src: config/manifests
+    dest: opt/manifests/odh-ai-first-demo
   odh-kserve-controller:
     src: config
     dest: kserve
