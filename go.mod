@@ -10,7 +10,7 @@ require (
 	github.com/itchyny/gojq v0.12.18
 	github.com/k8s-manifest-kit/engine v0.2.1-0.20260302092700-39c16f95d249
 	github.com/k8s-manifest-kit/renderer-helm v0.3.1-0.20260303100010-977618f3f59b
-	github.com/onsi/ginkgo/v2 v2.28.1
+	github.com/onsi/ginkgo/v2 v2.28.2
 	github.com/onsi/gomega v1.39.1
 	github.com/opendatahub-io/opendatahub-operator/v2/pkg/clusterhealth v0.0.0
 	github.com/opendatahub-io/opendatahub-operator/v2/pkg/failureclassifier v0.0.0-00010101000000-000000000000
