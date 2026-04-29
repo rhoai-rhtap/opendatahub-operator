@@ -11,7 +11,7 @@ require (
 	github.com/k8s-manifest-kit/engine v0.2.1-0.20260302092700-39c16f95d249
 	github.com/k8s-manifest-kit/renderer-helm v0.3.1-0.20260303100010-977618f3f59b
 	github.com/onsi/ginkgo/v2 v2.28.1
-	github.com/onsi/gomega v1.39.1
+	github.com/onsi/gomega v1.40.0
 	github.com/opendatahub-io/opendatahub-operator/v2/pkg/clusterhealth v0.0.0
 	github.com/opendatahub-io/opendatahub-operator/v2/pkg/failureclassifier v0.0.0-00010101000000-000000000000
 	github.com/openshift/api v0.0.0-20230823114715-5fdd7511b790
