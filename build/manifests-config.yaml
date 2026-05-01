@@ -66,3 +66,6 @@ map:
   odh-ai-third-demo:
     src: config/manifests
     dest: opt/manifests/odh-ai-third-demo
+  odh-ai-fourth-demo:
+    src: config/manifests
+    dest: opt/manifests/odh-ai-fourth-demo
