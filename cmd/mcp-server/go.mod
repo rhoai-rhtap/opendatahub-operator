@@ -5,7 +5,7 @@ go 1.25.7
 require (
 	github.com/mark3labs/mcp-go v0.32.0
 	github.com/opendatahub-io/opendatahub-operator/v2/pkg/clusterhealth v0.0.0
-	github.com/opendatahub-io/opendatahub-operator/v2/pkg/failureclassifier v0.0.0-00010101000000-000000000000
+	github.com/opendatahub-io/opendatahub-operator/v2/pkg/failureclassifier/v3 v3.4.0
 	k8s.io/api v0.35.2
 	k8s.io/apimachinery v0.35.2
 	k8s.io/client-go v0.35.2

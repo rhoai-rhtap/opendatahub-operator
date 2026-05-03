@@ -13,7 +13,7 @@ require (
 	github.com/onsi/ginkgo/v2 v2.28.1
 	github.com/onsi/gomega v1.39.1
 	github.com/opendatahub-io/opendatahub-operator/v2/pkg/clusterhealth v0.0.0
-	github.com/opendatahub-io/opendatahub-operator/v2/pkg/failureclassifier v0.0.0-00010101000000-000000000000
+	github.com/opendatahub-io/opendatahub-operator/v2/pkg/failureclassifier/v3 v3.4.0
 	github.com/openshift/api v0.0.0-20230823114715-5fdd7511b790
 	github.com/operator-framework/api v0.31.0
 	github.com/prometheus-operator/prometheus-operator/pkg/apis/monitoring v0.68.0
