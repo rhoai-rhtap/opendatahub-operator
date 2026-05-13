@@ -3,7 +3,7 @@ module github.com/opendatahub-io/opendatahub-operator/v2/pkg/clusterhealth
 go 1.25.7
 
 require (
-	golang.org/x/sync v0.19.0
+	golang.org/x/sync v0.20.0
 	k8s.io/api v0.35.2
 	k8s.io/apimachinery v0.35.2
 	k8s.io/client-go v0.35.2
