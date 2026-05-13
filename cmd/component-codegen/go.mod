@@ -3,7 +3,7 @@ module github.com/opendatahub-io/opendatahub-operator/v2/cmd/component-codegen
 go 1.25.0
 
 require (
-	github.com/sirupsen/logrus v1.9.3
+	github.com/sirupsen/logrus v1.9.4
 	github.com/spf13/cobra v1.8.1
 )
 
