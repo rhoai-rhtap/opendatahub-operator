@@ -129,8 +129,8 @@ github.com/k8s-manifest-kit/engine v0.2.1-0.20260302092700-39c16f95d249 h1:t5hu9
 github.com/k8s-manifest-kit/engine v0.2.1-0.20260302092700-39c16f95d249/go.mod h1:T6d7e/KdU3yDIXUSxK3dXlKcWohlCbtxAECQmBMFgwA=
 github.com/k8s-manifest-kit/pkg v0.2.1-0.20260302085906-6946a2e8e1d5 h1:CbixclOSNUSeuZDz+IrDCFjeRDVQE7sCXaEtMx0StSE=
 github.com/k8s-manifest-kit/pkg v0.2.1-0.20260302085906-6946a2e8e1d5/go.mod h1:FK2D/WI2GTjUJybtJcKwI+Q/kgxpFMs75ntGnXXtzY8=
-github.com/k8s-manifest-kit/renderer-helm v0.3.1-0.20260303100010-977618f3f59b h1:YnmNIgmF5EpIqdQNa4EYnDhNj7e6+t4RXFpWtogrvSA=
-github.com/k8s-manifest-kit/renderer-helm v0.3.1-0.20260303100010-977618f3f59b/go.mod h1:24wM7JOR2iMOnBBQKh7PyWclV+5E5J2A2E5OGtdbwgo=
+github.com/k8s-manifest-kit/renderer-helm v0.3.1-0.20260320085222-8d18680fc78f h1:KUls2ttAzfj3JQy7+vywaiGeqwljpRhoff2OfwjMyQA=
+github.com/k8s-manifest-kit/renderer-helm v0.3.1-0.20260320085222-8d18680fc78f/go.mod h1:24wM7JOR2iMOnBBQKh7PyWclV+5E5J2A2E5OGtdbwgo=
 github.com/kisielk/errcheck v1.5.0/go.mod h1:pFxgyoBC7bSaBwPgfKdkLd5X25qrDl4LWUI2bnpBCr8=
 github.com/kisielk/gotool v1.0.0/go.mod h1:XhKaO+MFFWcvkIS/tQcRk01m1F5IRFswLeQ+oQHNcck=
 github.com/klauspost/compress v1.18.0 h1:c/Cqfb0r+Yi+JtIEq73FWXVkRonBlf0CRNYc8Zttxdo=
