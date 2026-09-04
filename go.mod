@@ -8,7 +8,7 @@ require (
 	github.com/go-logr/logr v1.4.3
 	github.com/hashicorp/go-multierror v1.1.1
 	github.com/itchyny/gojq v0.12.18
-	github.com/k8s-manifest-kit/engine v0.2.1-0.20260302092700-39c16f95d249
+	github.com/k8s-manifest-kit/engine 5564fa1e7496
 	github.com/k8s-manifest-kit/renderer-helm v0.3.1-0.20260303100010-977618f3f59b
 	github.com/onsi/ginkgo/v2 v2.28.1
 	github.com/onsi/gomega v1.39.1
