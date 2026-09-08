@@ -1,6 +1,6 @@
 module github.com/opendatahub-io/opendatahub-operator/v2/cmd/mcp-server
 
-go 1.25.7
+go 1.27
 
 require (
 	github.com/mark3labs/mcp-go v0.32.0

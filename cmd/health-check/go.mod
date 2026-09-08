@@ -1,6 +1,6 @@
 module github.com/opendatahub-io/opendatahub-operator/v2/cmd/health-check
 
-go 1.25.7
+go 1.27
 
 require (
 	github.com/opendatahub-io/opendatahub-operator/v2/pkg/clusterhealth v0.0.0
