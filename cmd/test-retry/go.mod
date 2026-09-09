@@ -1,13 +1,13 @@
 module github.com/opendatahub-io/opendatahub-operator/v2/cmd/test-retry
 
-go 1.25.0
+go 1.26.0
 
 require (
 	github.com/google/go-github/v67 v67.0.0
 	github.com/spf13/cobra v1.8.1
 	github.com/spf13/viper v1.21.0
 	github.com/stretchr/testify v1.11.1
-	golang.org/x/oauth2 v0.31.0
+	golang.org/x/oauth2 v0.37.0
 	gotest.tools/gotestsum v1.11.0
 )
 
