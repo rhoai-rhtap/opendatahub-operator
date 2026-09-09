@@ -5,7 +5,7 @@ go 1.25.7
 require (
 	github.com/blang/semver/v4 v4.0.0
 	github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc
-	github.com/go-logr/logr v1.4.3
+	github.com/go-logr/logr v1.4.4
 	github.com/hashicorp/go-multierror v1.1.1
 	github.com/itchyny/gojq v0.12.18
 	github.com/k8s-manifest-kit/engine v0.2.1-0.20260302092700-39c16f95d249
