@@ -2,7 +2,7 @@ module github.com/opendatahub-io/opendatahub-operator/v2/pkg/failureclassifier
 
 go 1.25.7
 
-require github.com/opendatahub-io/opendatahub-operator/v2/pkg/clusterhealth v0.0.0
+require github.com/opendatahub-io/opendatahub-operator/v2/pkg/clusterhealth v0.0.1
 
 require (
 	github.com/davecgh/go-spew v1.1.1 // indirect
