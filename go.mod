@@ -14,7 +14,7 @@ require (
 	github.com/onsi/gomega v1.39.1
 	github.com/opendatahub-io/opendatahub-operator/v2/pkg/clusterhealth v0.0.0
 	github.com/opendatahub-io/opendatahub-operator/v2/pkg/failureclassifier v0.0.0-00010101000000-000000000000
-	github.com/openshift/api v0.0.0-20230823114715-5fdd7511b790
+	github.com/openshift/api 44bef346c3f0
 	github.com/operator-framework/api v0.31.0
 	github.com/prometheus-operator/prometheus-operator/pkg/apis/monitoring v0.68.0
 	github.com/prometheus/client_golang v1.23.2
